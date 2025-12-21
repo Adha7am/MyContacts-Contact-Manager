@@ -1,0 +1,163 @@
+
+body {
+    font-family: Inter, sans-serif;
+    background-color: #f8fafc;
+
+}
+
+.header__pfp {
+    width: 40px;
+    aspect-ratio: 1;
+}
+
+@media (min-width: 768px) {
+    .container-fluid {
+        max-width: 80%;
+    }
+}
+
+.my-shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    padding-top: 116px;
+    padding-bottom: 40px;
+    background-color: #f8fafc;
+}
+
+.my-sm-fs {
+    font-size: 0.75rem;
+}
+
+.category-header {
+    min-height: 50px;
+}
+
+.my-base-fs {
+    font-size: 1rem;
+}
+
+.fa-stack {
+    margin-top: -5px
+}
+
+.min-h-100 {
+    min-height: 100px;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0 rgba(13, 110, 253, 0.25);
+}
+
+input::placeholder {
+    color: #999;
+    font-size: .875rem;
+
+}
+.contact__pfp {
+  width: 50px;
+  aspect-ratio: 1 ;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #eee;
+  display: inline-block;
+}
+
+.contact__pfp img {
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+#imagePreview {
+    width: 100px;
+    aspect-ratio: 1;
+}
+
+#notes {
+    resize: none;
+}
+
+.pfp-sm {
+    width: 40px;
+    aspect-ratio: 1;
+}
+
+/* combined with later rules */
+
+.btn-outline-warning {
+    --bs-btn-hover-color: white;
+}
+
+.contact-card {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.contact-card:hover {
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.btn {
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.side-contact {
+    cursor: pointer;
+    background-color: #f8fafc;
+    transition: all 0.2s ease;
+}
+
+.side-contact:hover {
+    transform: translateX(2px);
+    background-color: #f3f4f5;
+}
+
+
+
+i.text-warning {
+    background: linear-gradient(135deg, #ffc107, #ff9100);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+i.text-danger,
+.highlighted-text {
+    background: linear-gradient(135deg, #dc3545, #ff0055);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.fa-inverse {
+    -webkit-text-fill-color: white !important;
+}
+
+.shadow-hover:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.phone-icon {
+  transition: background-color 0.3s ease;
+}
+
+.phone-icon:hover {
+    background-color: rgb(156, 235, 156) !important;
+    
+}
+
+.anchor{
+    text-decoration: none;
+    color: inherit;
+}
