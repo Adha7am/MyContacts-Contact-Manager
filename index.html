@@ -30,28 +30,36 @@
 
                     <!-- image -->
                     <label for="image">Upload Image</label>
-                    <input type="file" id="image" placeholder="Upload Image" class="to-validate form-control mb-2 rounded-3" oninput="validate(this, 'imageAlert')">
+                    <input type="file" id="image" placeholder="Upload Image"
+                        class="to-validate form-control mb-2 rounded-3" oninput="validate(this, 'imageAlert')">
                     <div id="imageAlert" class=" my-alert text-danger small d-none ">Only .jpg or .jpeg is allowed</div>
 
                     <!-- name -->
                     <label for="name" class="mt-2">Full Name </label>
-                    <input class="form-control mb-2 rounded-3 to-validate" placeholder="Name" id="name" oninput="validate(this, 'nameAlert')">
-                    <div id="nameAlert" class="my-alert text-danger small d-none ">Name should be from 3 to 30 characters</div>
+                    <input class="form-control mb-2 rounded-3 to-validate" placeholder="Name" id="name"
+                        oninput="validate(this, 'nameAlert')">
+                    <div id="nameAlert" class="my-alert text-danger small d-none ">Name should be from 3 to 30
+                        characters</div>
 
                     <!-- phone Number -->
                     <label for="phone" class="mt-2">Phone Number</label>
-                    <input class="form-control mb-2 rounded-3 to-validate" placeholder="e.g. 010123455678" id="phone" oninput="validate(this, 'phoneAlert')" >
-                    <div id="phoneAlert" class=" my-alert text-danger small d-none ">Enter an Egyption Phone Number</div>
+                    <input class="form-control mb-2 rounded-3 to-validate" placeholder="e.g. 010123455678" id="phone"
+                        oninput="validate(this, 'phoneAlert')">
+                    <div id="phoneAlert" class=" my-alert text-danger small d-none ">Enter an Egyption Phone Number
+                    </div>
 
                     <!-- email -->
                     <label for="email" class="mt-2">Email Address</label>
-                    <input class="form-control mb-2 rounded-3 to-validate" placeholder="name@example.com" id="email" oninput="validate(this , 'emailAlert')">
+                    <input class="form-control mb-2 rounded-3 to-validate" placeholder="name@example.com" id="email"
+                        oninput="validate(this , 'emailAlert')">
                     <div id="emailAlert" class="my-alert text-danger small d-none ">Enter a valid Email Address</div>
 
                     <!-- address -->
                     <label for="address" class="mt-2">Address</label>
-                    <input class="form-control mb-2 rounded-3 to-validate" placeholder="Enter Address" id="address" oninput="validate(this, 'addressAlert')">
-                    <div id="addressAlert" class="my-alert text-danger small d-none ">Address should be from 5 to 30 characters</div>
+                    <input class="form-control mb-2 rounded-3 to-validate" placeholder="Enter Address" id="address"
+                        oninput="validate(this, 'addressAlert')">
+                    <div id="addressAlert" class="my-alert text-danger small d-none ">Address should be from 5 to 30
+                        characters</div>
 
 
                     <!-- group -->
@@ -94,12 +102,12 @@
                 </div>
 
                 <div class="modal-footer">
-                    
-                    
+
+
 
                     <button class="btn btn-secondary" onclick="clearForm()" data-bs-dismiss="modal">Cancel</button>
-                    <button class="btn btn-primary" onclick="addContact()" data-bs-dismiss="modal"
-                        id="addContactBtn" disabled="true">Save</button>
+                    <button class="btn btn-primary" onclick="addContact()" data-bs-dismiss="modal" id="addContactBtn"
+                        disabled="true">Save</button>
                     <button class="btn btn-primary d-none" data-bs-dismiss="modal" id="updateContactBtn"
                         onclick="updateContact()" disabled="true">Update</button>
 
@@ -214,13 +222,17 @@
                     <!-- "Cartoona" -->
                     <div class="row gy-3" id="allContactsWrapper">
                         <!-- Contact to be added-->
-                        <div class="w-100 d-flex justify-content-center align-items-center h1">
+                        <div class="w-100 d-flex justify-content-center align-items-center mt-5">
                             <div class="d-flex flex-column justify-content-center align-items-center">
-                                <i class="fa-solid fa-user-plus fs-1 text-secondary"></i>
-                                <span class="text-secondary my-base-fs ">No contacts found</span>
-                                <span class="text-secondary my-sm-fs"> Click "+ Add contact" to get started</span>
+
+                                <i class="fa-solid fa-user-plus fs-4 text-secondary my-2"></i>
+                                <span class="text-secondary my-base-fs fw-bold ">No contacts found</span>
+
+                                <span class="text-secondary my-sm-fs"> Click "+ Add contact " to get started</span>
+
                             </div>
                         </div>
+
                     </div>
                 </div>
 
@@ -251,7 +263,11 @@
                                     <!-- favorites cartoona -->
                                     <div class="row gy-2 overflow-auto" Id="FavoritesContacts">
                                         <!-- contacts to be added -->
-
+                                        <div
+                                            class="d-flex flex-column justify-content-center align-items-center py-3 text-center">
+                                            <i class="fa-solid fa-star text-muted mb-1"></i>
+                                            <span class="text-secondary my-sm-fs">No favorites yet</span>
+                                        </div>
 
                                     </div>
                                 </div>
@@ -282,7 +298,11 @@
                                     <!-- Emergency Cartoona -->
                                     <div class="row gy-2 overflow-auto" Id="EmergencyContacts">
                                         <!-- contacts to be added -->
-
+                                        <div
+                                            class="d-flex flex-column justify-content-center align-items-center py-3 text-center">
+                                            <i class="fa-solid fa-heart-pulse text-muted mb-1"></i>
+                                            <span class="text-secondary my-sm-fs">No emergency contacts</span>
+                                        </div>
                                     </div>
                                 </div>
 
