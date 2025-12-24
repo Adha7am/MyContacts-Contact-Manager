@@ -449,18 +449,16 @@ function validate(element, alertId) {
     toggleUpdateContactBtn();
 }
 
+function areAllInputsValid() {
+    return Object.values(regex).every(function (field) {
+        return field.isValid;
+    });
+}
+
 function toggleAddContactBtn() {
-    if (regex.name.isValid && regex.phone.isValid && regex.email.isValid && regex.image.isValid && regex.address.isValid) {
-        addContactBtn.disabled = false;
-    } else {
-        addContactBtn.disabled = true;
-    }
+    addContactBtn.disabled = !areAllInputsValid();
 }
 
 function toggleUpdateContactBtn() {
-    if (regex.name.isValid && regex.phone.isValid && regex.email.isValid && regex.image.isValid && regex.address.isValid) {
-        updateContactBtn.disabled = false;
-    } else {
-        updateContactBtn.disabled = true;
-    }
+    updateContactBtn.disabled = !areAllInputsValid();
 }
